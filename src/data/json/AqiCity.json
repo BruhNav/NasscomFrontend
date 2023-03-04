@@ -1,0 +1,252 @@
+{
+    "Nizam":[
+        {
+          "Date": "22-Jan",
+          "temp_max": 55.27419
+        },
+        {
+          "Date": "22-Feb",
+          "temp_max": 54.523483
+        },
+        {
+          "Date": "22-Mar",
+          "temp_max": 52.901596
+        },
+        {
+          "Date": "22-Apr",
+          "temp_max": 51.39998
+        },
+        {
+          "Date": "22-May",
+          "temp_max": 53.38837
+        },
+        {
+          "Date": "22-Jun",
+          "temp_max": 66.94138
+        },
+        {
+          "Date": "22-Jul",
+          "temp_max": 56.946228
+        },
+        {
+          "Date": "22-Aug",
+          "temp_max": 58.337452
+        },
+        {
+          "Date": "22-Sep",
+          "temp_max": 48.65227
+        },
+        {
+          "Date": "22-Oct",
+          "temp_max": 56.77901
+        },
+        {
+          "Date": "22-Nov",
+          "temp_max": 61.36668
+        },
+        {
+          "Date": "22-Dec",
+          "temp_max": 63.731148
+        }
+       ],
+    "Adilabad":[
+        {
+          "Dates": "22-Jan",
+          "temp_max": 81.72122
+        },
+        {
+          "Dates": "22-Feb",
+          "temp_max": 73.12402
+        },
+        {
+          "Dates": "22-Mar",
+          "temp_max": 66.349686
+        },
+        {
+          "Dates": "22-Apr",
+          "temp_max": 66.81526
+        },
+        {
+          "Dates": "22-May",
+          "temp_max": 52.924267
+        },
+        {
+          "Dates": "22-Jun",
+          "temp_max": 44.61433
+        },
+        {
+          "Dates": "22-Jul",
+          "temp_max": 53.749264
+        },
+        {
+          "Dates": "22-Aug",
+          "temp_max": 75.8733
+        },
+        {
+          "Dates": "22-Sep",
+          "temp_max": 102.23049
+        },
+        {
+          "Dates": "22-Oct",
+          "temp_max": 69.300285
+        },
+        {
+          "Dates": "22-Nov",
+          "temp_max": 63.4205
+        },
+        {
+          "Dates": "22-Dec",
+          "temp_max": 79.62048
+        }
+       ],
+    "Karim":[
+        {
+          "Dates": "22-Jan",
+          "temp_max": 71.0518
+        },
+        {
+          "Dates": "22-Feb",
+          "temp_max": 61.198982
+        },
+        {
+          "Dates": "22-Mar",
+          "temp_max": 87.24447
+        },
+        {
+          "Dates": "22-Apr",
+          "temp_max": 91.629425
+        },
+        {
+          "Dates": "22-May",
+          "temp_max": 112.862724
+        },
+        {
+          "Dates": "22-Jun",
+          "temp_max": 57.14151
+        },
+        {
+          "Dates": "22-Jul",
+          "temp_max": 102.80983
+        },
+        {
+          "Dates": "22-Aug",
+          "temp_max": 96.123505
+        },
+        {
+          "Dates": "22-Sep",
+          "temp_max": 81.41311
+        },
+        {
+          "Dates": "22-Oct",
+          "temp_max": 76.38068
+        },
+        {
+          "Dates": "22-Nov",
+          "temp_max": 88.98084
+        },
+        {
+          "Dates": "22-Dec",
+          "temp_max": 99.059105
+        }
+       ],
+    "Warangal":[
+        {
+          "Dates": "Jan-22",
+          "temp_max": 77.296455
+        },
+        {
+          "Dates": "Feb-22",
+          "temp_max": 76.70474
+        },
+        {
+          "Dates": "Mar-22",
+          "temp_max": 80.78047
+        },
+        {
+          "Dates": "Apr-22",
+          "temp_max": 74.433464
+        },
+        {
+          "Dates": "May-22",
+          "temp_max": 54.463226
+        },
+        {
+          "Dates": "Jun-22",
+          "temp_max": 77.302216
+        },
+        {
+          "Dates": "Jul-22",
+          "temp_max": 70.19153
+        },
+        {
+          "Dates": "Aug-22",
+          "temp_max": 71.04725
+        },
+        {
+          "Dates": "Sep-22",
+          "temp_max": 79.37651
+        },
+        {
+          "Dates": "Oct-22",
+          "temp_max": 80.53474
+        },
+        {
+          "Dates": "Nov-22",
+          "temp_max": 77.77168
+        },
+        {
+          "Dates": "Dec-22",
+          "temp_max": 67.01765
+        }
+       ],
+    "Khammam":[
+        {
+          "Date": "22-Jan",
+          "temp_max": 72.30061
+        },
+        {
+          "Date": "22-Feb",
+          "temp_max": 68.66039
+        },
+        {
+          "Date": "22-Mar",
+          "temp_max": 94.613594
+        },
+        {
+          "Date": "22-Apr",
+          "temp_max": 95.94448
+        },
+        {
+          "Date": "22-May",
+          "temp_max": 72.71611
+        },
+        {
+          "Date": "22-Jun",
+          "temp_max": 88.440994
+        },
+        {
+          "Date": "22-Jul",
+          "temp_max": 66.04438
+        },
+        {
+          "Date": "22-Aug",
+          "temp_max": 54.104908
+        },
+        {
+          "Date": "22-Sep",
+          "temp_max": 65.037125
+        },
+        {
+          "Date": "22-Oct",
+          "temp_max": 65.82297
+        },
+        {
+          "Date": "22-Nov",
+          "temp_max": 73.85409
+        },
+        {
+          "Date": "22-Dec",
+          "temp_max": 67.316124
+        }
+       ]
+}
