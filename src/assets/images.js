@@ -1,4 +1,4 @@
-import logo from "./images/logo.png"
+import logo from "./images/Logo.png"
 import arcImg from "./images/ModelArchitectureHeatwave.jpg"
 import arcImg2 from "./images/ModelArchitectureAqi.jpg"
 
