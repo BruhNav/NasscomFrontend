@@ -7,7 +7,7 @@ function createData(CityName, score1, score2, score3, score4) {
 }
 
 const rows = [
-    createData('City', 1.2, 1.3, 1.4, 1.5),
+    createData('MSE', 1.2, 1.3, 1.4, 1.5),
 ]
 
 const { arcImg2 } = images
