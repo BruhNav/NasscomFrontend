@@ -99,7 +99,7 @@ const Home = () => {
   }
 
   return (
-    <div className='flex flex-col mt-8'>
+    <div className='flex flex-col mt-8 mx-20'>
       <div className='flex justify-between items-center'>
         <ToggleButtonGroup
           value={output}

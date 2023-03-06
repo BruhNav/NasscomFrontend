@@ -4,7 +4,7 @@ const { logo } = images;
 
 function Header(){
   return (
-    <header className="flex mt-12 justify-between items-center">
+    <header className="flex mt-12 justify-between items-center mx-20">
         <div className="header__logo">
             <img
                 src={logo}

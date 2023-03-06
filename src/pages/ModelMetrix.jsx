@@ -29,7 +29,7 @@ const ModelMetrix = () => {
 
 
   return (
-    <div className='flex flex-col justify-center items-center mt-8'>
+    <div className='flex flex-col justify-center items-center mt-8 mx-20'>
         <div className='flex'>
             <ToggleButtonGroup
             value={output}
