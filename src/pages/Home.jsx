@@ -157,8 +157,6 @@ const Home = () => {
           </ToggleButtonGroup>
         </div>
         }
-
-
         <div className='w-[210px]'>
           {duration === 'monthly' && (
               <FormControl variant='standard' sx={{ m: 1, minWidth: 200 }}>
@@ -188,6 +186,8 @@ const Home = () => {
           }
         </div>
       </div>
+      
+      {output===''&& <div className='flex justify-start  text-2xl font-bold'>Please select between <span className='text-cta mx-2'> AQI </span> and <span className='text-cta mx-2'> Heat Wave </span></div>}
       <div className='flex justify-between w-full'>
           {output==='HeatWave'&&
           <div className='flex my-8 items-center w-1/10'>
