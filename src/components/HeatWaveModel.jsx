@@ -31,10 +31,10 @@ const HeatWaveModel = () => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='right'>Conv-1D Federated</TableCell>
-                            <TableCell align='right'>Conv-1D Centralized</TableCell>
-                            <TableCell align='right'>Conv-2D Federated</TableCell>
-                            <TableCell align='right'>Conv-2D Centralized</TableCell>
+                            <TableCell align='center'>Conv-1D Federated</TableCell>
+                            <TableCell align='center'>Conv-1D Centralized</TableCell>
+                            <TableCell align='center'>Conv-2D Federated</TableCell>
+                            <TableCell align='center'>Conv-2D Centralized</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -46,10 +46,10 @@ const HeatWaveModel = () => {
                             <TableCell component='th' scope='row'>
                                 {row.CityName}
                             </TableCell>
-                            <TableCell align='right'>{row.score1}</TableCell>
-                            <TableCell align='right'>{row.score2}</TableCell>
-                            <TableCell align='right'>{row.score3}</TableCell>
-                            <TableCell align='right'>{row.score4}</TableCell>
+                            <TableCell align='center'>{row.score1}</TableCell>
+                            <TableCell align='center'>{row.score2}</TableCell>
+                            <TableCell align='center'>{row.score3}</TableCell>
+                            <TableCell align='center'>{row.score4}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>

@@ -31,10 +31,10 @@ const AqiModel = () => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='right'>Multiheaded Conv-1D</TableCell>
-                            <TableCell align='right'>CNN + LSTM</TableCell>
-                            <TableCell align='right'>Mullti-variate CNN <div>(with single output)</div></TableCell>
-                            <TableCell align='right'>Multi-variate CNN <div>(with multi step output)</div></TableCell>
+                            <TableCell align='center'>Multiheaded Conv-1D</TableCell>
+                            <TableCell align='center'>CNN + LSTM</TableCell>
+                            <TableCell align='center'>Mullti-variate CNN <div>(with single output)</div></TableCell>
+                            <TableCell align='center'>Multi-variate CNN <div>(with multi step output)</div></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -46,10 +46,10 @@ const AqiModel = () => {
                             <TableCell component='th' scope='row'>
                                 {row.CityName}
                             </TableCell>
-                            <TableCell align='right'>6.08</TableCell>
-                            <TableCell align='right'>9.7</TableCell>
-                            <TableCell align='right'>8.9</TableCell>
-                            <TableCell align='right'>7.34</TableCell>
+                            <TableCell align='center'>6.08</TableCell>
+                            <TableCell align='center'>9.7</TableCell>
+                            <TableCell align='center'>8.9</TableCell>
+                            <TableCell align='center'>7.34</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
