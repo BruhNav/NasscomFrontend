@@ -1,4 +1,5 @@
 import { images } from "../assets";
+import {Link} from "react-router-dom";
 
 const { logo } = images;
 
@@ -14,9 +15,9 @@ function Header(){
             />
         </div>
         <div className="flex justify-between itmes-center">
-            <div className="mx-4 text-text font-semibold"><button><a href="/">Home</a></button></div>
-            <div className="mx-4 text-text font-semibold"><button><a href="/about">About Us</a> </button></div>
-            <div className="mx-4 text-text font-semibold"><button><a href="/model-metrix">Model</a></button></div>
+            <div className="mx-4 text-text font-semibold"><button><Link to="/">Home</Link></button></div>
+            <div className="mx-4 text-text font-semibold"><button><Link to="/about">About Us</Link> </button></div>
+            <div className="mx-4 text-text font-semibold"><button><Link to="/model-metrix">Model</Link></button></div>
             <button className="mx-4 text-white bg-cta font-semibold h-8 w-20 rounded">Contact</button>
         </div>
     </header>
