@@ -5,21 +5,20 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import ModelMetrix from './pages/ModelMetrix'
 import About from './pages/About'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/model-metrix', element: <ModelMetrix />},
-  { path: '/about', element: <About />}
-])
 
 function App() {
 
   return (
-    <div className="App mx-20">
-      <Header />
-      <RouterProvider router={router}/>
-    </div>
+    <Router>
+				<Header />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/model-metrix' element={<ModelMetrix />} />
+					<Route path='/about' element={<About />} />
+        </Routes>
+    </Router>
   )
 }
 
