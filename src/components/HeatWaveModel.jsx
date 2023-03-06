@@ -7,7 +7,7 @@ function createData(CityName, score1, score2, score3, score4) {
 }
 
 const rows = [
-    createData('City', 1.2, 1.3, 1.4, 1.5)
+    createData('MSE', "1.1 ± 0.05", "1.3 ± 0.07", "0.8 ± 0.06", "1.2±0.07")
 ]
 
 const { arcImg } = images
@@ -25,16 +25,16 @@ const HeatWaveModel = () => {
                 <img width={'600rems'} src={arcImg} />
             </div>
         </div>
-        <div className='my-12 border-2 border-'>
+        <div className='mt-12 border-2 border-'>
             <TableContainer >
                 <Table sx={{minWidth:700}}>
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='right'>Model 1</TableCell>
-                            <TableCell align='right'>Model 2</TableCell>
-                            <TableCell align='right'>Model 3</TableCell>
-                            <TableCell align='right'>Model 4</TableCell>
+                            <TableCell align='right'>Conv-1D Federated</TableCell>
+                            <TableCell align='right'>Conv-1D Centralized</TableCell>
+                            <TableCell align='right'>Conv-2D Federated</TableCell>
+                            <TableCell align='right'>Conv-2D Centralized</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -56,6 +56,7 @@ const HeatWaveModel = () => {
                 </Table>
             </TableContainer>
         </div>
+        <div className='mt-2 mb-12 text-cta'>*The ± symbol signifies the variation of MSE among all the 5 cities</div>
     </div>
   )
 }
