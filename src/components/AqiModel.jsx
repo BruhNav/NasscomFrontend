@@ -27,14 +27,14 @@ const AqiModel = () => {
         </div>
         <div className='my-12 border-2 border-'>
             <TableContainer >
-                <Table sx={{minWidth:700}}>
+                <Table sx={{minWidth:700, maxWidth:800}}>
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='right'>Model 1</TableCell>
-                            <TableCell align='right'>Model 2</TableCell>
-                            <TableCell align='right'>Model 3</TableCell>
-                            <TableCell align='right'>Model 4</TableCell>
+                            <TableCell align='right'>Multiheaded Conv-1D Model</TableCell>
+                            <TableCell align='right'>CNN + LSTM</TableCell>
+                            <TableCell align='right'>Mullti-variate CNN (with single output)</TableCell>
+                            <TableCell align='right'>Multi-variate CNN (with multi step output)</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -46,10 +46,10 @@ const AqiModel = () => {
                             <TableCell component='th' scope='row'>
                                 {row.CityName}
                             </TableCell>
-                            <TableCell align='right'>{row.score1}</TableCell>
-                            <TableCell align='right'>{row.score2}</TableCell>
-                            <TableCell align='right'>{row.score3}</TableCell>
-                            <TableCell align='right'>{row.score4}</TableCell>
+                            <TableCell align='right'>6.08</TableCell>
+                            <TableCell align='right'>9.7</TableCell>
+                            <TableCell align='right'>8.9</TableCell>
+                            <TableCell align='right'>7.34</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
