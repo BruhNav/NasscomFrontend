@@ -31,10 +31,10 @@ const AqiModel = () => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='right'>Multiheaded Conv-1D Model</TableCell>
+                            <TableCell align='right'>Multiheaded Conv-1D</TableCell>
                             <TableCell align='right'>CNN + LSTM</TableCell>
-                            <TableCell align='right'>Mullti-variate CNN (with single output)</TableCell>
-                            <TableCell align='right'>Multi-variate CNN (with multi step output)</TableCell>
+                            <TableCell align='right'>Mullti-variate CNN <div>(with single output)</div></TableCell>
+                            <TableCell align='right'>Multi-variate CNN <div>(with multi step output)</div></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
