@@ -44,7 +44,7 @@ const ChartOutputMon = (props) => {
         <Line
             data={state}
             options={
-                {
+            {
                 responsive: true,
                 title:{
                     display:true,

@@ -660,6 +660,13 @@
   dependencies:
     "@kurkle/color" "^0.3.0"
 
+"chartjs-plugin-zoom@^2.0.0":
+  "integrity" "sha512-bqpi7DGy9a5hX7ThKl/xQaLzXvneSwhS0w/lNimZ8AJaoRVMKz5JfUoqwciJYV5ixKXJbgyvwC9HcJnyVsYmjg=="
+  "resolved" "https://registry.npmjs.org/chartjs-plugin-zoom/-/chartjs-plugin-zoom-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "hammerjs" "^2.0.8"
+
 "chokidar@^3.5.3":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz"
@@ -887,6 +894,11 @@
   "integrity" "sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA=="
   "resolved" "https://registry.npmjs.org/globals/-/globals-11.12.0.tgz"
   "version" "11.12.0"
+
+"hammerjs@^2.0.8":
+  "integrity" "sha512-tSQXBXS/MWQOn/RKckawJ61vvsDpCom87JgxiYdGwHdOa0ht0vzUWDlfioofFCRU0L+6NGDt6XzbgoJvZkMeRQ=="
+  "resolved" "https://registry.npmjs.org/hammerjs/-/hammerjs-2.0.8.tgz"
+  "version" "2.0.8"
 
 "has-flag@^3.0.0":
   "integrity" "sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw=="

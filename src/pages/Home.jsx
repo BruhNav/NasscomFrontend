@@ -1,5 +1,5 @@
 import React from 'react'
-import { ToggleButton, FormControl, MenuItem, Select, Checkbox, InputLabel, FormControlLabel} from '@mui/material'
+import { ToggleButton, FormControl, MenuItem, Select, InputLabel} from '@mui/material'
 import { ToggleButtonGroup } from '@mui/material'
 import {BsThermometerHalf} from 'react-icons/bs'
 import { RiWindyLine } from 'react-icons/ri'
@@ -28,7 +28,7 @@ const Home = () => {
 
   const [city, setCity] = React.useState('')
 
-  const [month, setMonth] = React.useState('0')
+  const [month, setMonth] = React.useState('1')
 
   const [duration, setDuration] = React.useState('')
 
@@ -187,7 +187,8 @@ const Home = () => {
         </div>
       </div>
       
-      {output===''&& <div className='flex justify-start  text-2xl font-bold'>Please select between <span className='text-cta mx-2'> AQI </span> and <span className='text-cta mx-2'> Heat Wave </span></div>}
+      {output===''&& <div className='flex justify-start mt-4 text-2xl font-bold'>Please select between <span className='text-cta mx-2'> AQI </span> and <span className='text-cta mx-2'> Heat Wave </span></div>}
+      {output!==''&&city===''&& <div className='flex justify-start mt-4 text-2xl font-bold'>Please select a <span className='text-cta mx-2'> City </span></div>}
       <div className='flex justify-between w-full'>
           {output==='HeatWave'&&
           <div className='flex my-8 items-center w-1/10'>
@@ -202,7 +203,6 @@ const Home = () => {
 
       {output==='AQI'&&city&&<AqiOutput city={AqiData} data={dataX}  />}
 
-      {/* {output==='HeatWave'&&city&&checked&&<ScatterOutput city={HighData} data={dataX}  />} */}
       {output==='HeatWave'&&checked&&<HeatWaveImage city={city} />}
       
     </div>
