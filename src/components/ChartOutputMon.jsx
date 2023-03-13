@@ -40,7 +40,7 @@ const ChartOutputMon = (props) => {
 
 
   return (
-    <div className='my-12 w-9/10'>
+    <div className='pl-4 w-4/5'>
         <Line
             data={state}
             options={

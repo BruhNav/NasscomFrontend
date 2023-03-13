@@ -99,67 +99,64 @@ const Home = () => {
   }
 
   return (
-    <div className='flex flex-col mt-8 mx-20'>
-      <div className='flex justify-between items-center'>
+    <div className='flex mt-8 mx-20'>
+      <div className='flex flex-col w-1/5 pr-4'>
+      {output===''&& <div className='justify-start mt-4 text-xl font-bold'>Please select between <span className='text-cta mr-1'> AQI </span> and <span className='text-cta mx-1'> Heat Wave </span></div>}
         <ToggleButtonGroup
           value={output}
           exclusive
           onChange={handelChangeOutput}
           aria-label='Output'
-          className='h-12 bg-cta w-max'
+          className='h-12 mt-8 bg-cta'
           size='large'
+          sx={{ width: '100%' }}
         >
-          <ToggleButton value='AQI'>
+          <ToggleButton sx={{width:'50%'}} value='AQI'>
             <BsThermometerHalf className='w-20' title='AQI' size={30} color='white'/>
           </ToggleButton>
-          <ToggleButton value='HeatWave'>
+          <ToggleButton sx={{width:'50%'}} value='HeatWave'>
             <RiWindyLine className='w-20' title='Heat Wave' size={30} color='white'/>
           </ToggleButton>
         </ToggleButtonGroup>
 
 
-        <div className='w-200'> 
-          <FormControl variant='standard' sx={{ m: 1, minWidth: 200 }}>
-            <InputLabel id='demo-simple-select-standard-label'>City</InputLabel>
-            <Select
-              labelId='demo-simple-select-standard-label'
-              id='demo-simple-select-standard'
-              value={city}
-              onChange={handelChangeCity}
+        <FormControl variant='standard' sx={{ mt: 4, width:'100%' }}>
+          <InputLabel id='demo-simple-select-standard-label'>City</InputLabel>
+          <Select
+            labelId='demo-simple-select-standard-label'
+            id='demo-simple-select-standard'
+            value={city}
+            onChange={handelChangeCity}
               label='Age'
-            >
-              <MenuItem value={1}>Adilabad</MenuItem>
-              <MenuItem value={2}>Nizamabad</MenuItem>
-              <MenuItem value={3}>Karimnagar</MenuItem>
-              <MenuItem value={4}>Khammam</MenuItem>
-              <MenuItem value={5}>Warangal</MenuItem>
-            </Select>
-          </FormControl>
-        </div>
+          >
+            <MenuItem value={1}>Adilabad</MenuItem>
+            <MenuItem value={2}>Nizamabad</MenuItem>
+            <MenuItem value={3}>Karimnagar</MenuItem>
+            <MenuItem value={4}>Khammam</MenuItem>
+            <MenuItem value={5}>Warangal</MenuItem>
+          </Select>
+        </FormControl>
     
         {output==='HeatWave' && !checked &&
-        <div className='w-[210px]'>
           <ToggleButtonGroup
             value={duration}
             exclusive
             onChange={handelChangeDuration}
             aria-label='Output'
-            className='h-12 bg-cta w-max'
+            className='h-12 mt-8 bg-cta w-[100%]'
             size='large'
-            sx={{ m: 1, minWidth: 200 }}
+            
           >
-            <ToggleButton value='monthly'>
+            <ToggleButton value='monthly' sx={{width:'50%'}}>
               <div className='font-bold text-white'>Monthly</div>
             </ToggleButton>
-            <ToggleButton value='yearly'>
+            <ToggleButton value='yearly' sx={{width:'50%'}}>
               <div className='font-bold text-white'>Yearly</div>
             </ToggleButton>
           </ToggleButtonGroup>
-        </div>
         }
-        <div className='w-[210px]'>
           {duration === 'monthly' && (
-              <FormControl variant='standard' sx={{ m: 1, minWidth: 200 }}>
+              <FormControl variant='standard' sx={{ mt: 4, minWidth: 200 }}>
               <InputLabel id='demo-simple-select-standard-label'>Month</InputLabel>
               <Select
                 labelId='demo-simple-select-standard-label'
@@ -184,19 +181,15 @@ const Home = () => {
             </FormControl>
           )
           }
-        </div>
-      </div>
-      
-      {output===''&& <div className='flex justify-start mt-4 text-2xl font-bold'>Please select between <span className='text-cta mx-2'> AQI </span> and <span className='text-cta mx-2'> Heat Wave </span></div>}
-      {output!==''&&city===''&& <div className='flex justify-start mt-4 text-2xl font-bold'>Please select a <span className='text-cta mx-2'> City </span></div>}
-      <div className='flex justify-between w-full'>
           {output==='HeatWave'&&
-          <div className='flex my-8 items-center w-1/10'>
-            <input onChange={()=>{setChecked(!checked)}} className='w-6 h-6 mr-4' type="checkbox" />
+          <div className='flex my-8 items-center w-[100%]'>
+            <input onChange={()=>{setChecked(!checked)}} className='w-6 h-6 mr-2' type="checkbox" />
             <div className='text-text font-bold text-lg'>Show Heat Wave Plot</div>
           </div>
           }
       </div>
+    
+      
       {output==='HeatWave'&&city&&!checked&&duration==='monthly'&&<ChartOutputMon month={month} city={Data} data={dataX}  />}
 
       {output==='HeatWave'&&city&&!checked&&duration==='yearly'&&<ChartOutputYear city={Data} data={dataX}  />}

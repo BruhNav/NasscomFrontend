@@ -48,7 +48,7 @@ const ChartOutputYear = (props) => {
 
 
   return (
-    <div className='flex flex-col my-4 items-center'>
+    <div className='flex flex-col ml-4 w-4/5 items-center'>
         <Line
             ref={chartRef}
             data={state}
