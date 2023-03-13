@@ -155,7 +155,7 @@ const Home = () => {
             </ToggleButton>
           </ToggleButtonGroup>
         }
-          {duration === 'monthly' && (
+          {duration === 'monthly'&&!checked && (
               <FormControl variant='standard' sx={{ mt: 4, minWidth: 200 }}>
               <InputLabel id='demo-simple-select-standard-label'>Month</InputLabel>
               <Select
