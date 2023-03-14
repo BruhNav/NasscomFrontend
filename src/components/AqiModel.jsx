@@ -1,5 +1,5 @@
 import React from 'react'
-import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
+import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Dialog, DialogActions, DialogContent,  DialogTitle } from '@mui/material'
 import {images} from '../assets'
 
 function createData(CityName, score1, score2, score3, score4) {
@@ -14,18 +14,23 @@ const { arcImg2 } = images
 
 const AqiModel = () => {
 
+    
+	const [open, setOpen] = React.useState(false)
+
+	const handleClickOpen = () => {
+		setOpen(true)
+	}
+	const handleClose = () => {
+		setOpen(false)
+	}
+
 
   return (
     <div className='flex flex-col justify-center items-center mt-8'>
-        <div className='flex flex-col justify-center items-center mt-12'>
-            <div className='font-bold text-text text-5xl'>
-                DEPLOYED MODEL: <span className='text-cta mt-2'>Multiheaded Conv-1D</span>
-            </div>
-            <div className='mt-12'>
-                <img width={'948rems'} src={arcImg2} />
-            </div>
+        <div className='font-bold text-text text-5xl'>
+            DEPLOYED MODEL: <span className='text-cta mt-2'>Multiheaded Conv-1D</span>
         </div>
-        <div className='my-12 border-2 border-'>
+        <div className='mt-8 border-2 border-'>
             <TableContainer >
                 <Table sx={{minWidth:700, maxWidth:800}}>
                     <TableHead>
@@ -56,6 +61,26 @@ const AqiModel = () => {
                 </Table>
             </TableContainer>
         </div>
+        <button onClick={handleClickOpen} className='bg-cta text-white font-semibold w-56 h-12 text-lg rounded mt-8'>Show Architecture</button>
+
+
+
+				<Dialog
+					open={open}
+					onClose={handleClose}
+				>
+					<DialogTitle>
+						<div className='text-cta font-bold text-center text-xl'>Multiheaded Conv-1D Architecture</div> 
+					</DialogTitle>
+					<DialogContent>
+                        <div>
+					        <img className='w-[1000rems]' src={arcImg2} />
+                        </div>
+					</DialogContent>
+					<DialogActions>
+						<button className='place-self-center m-2 bg-cta text-white w-14 h-8 rounded' onClick={handleClose}>Close</button>
+					</DialogActions>
+				</Dialog>
     </div>
   )
 }

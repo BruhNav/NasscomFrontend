@@ -20,7 +20,7 @@ const AqiOutput = (props) => {
                 lineTension: 0.5,
                 backgroundColor: 'red',
                 borderColor: 'rgba(0,0,0,1)',
-                borderWidth: 2,
+                borderWidth: 0.5,
                 data: max
             }
         ]
@@ -33,16 +33,45 @@ const AqiOutput = (props) => {
             data={state}
             options={
                 {
-                responsive: true,
-                title:{
-                    display:true,
-                    text:'AQI and HeatWave',
-                    fontSize:20
-                },
-                legend:{
-                    display:true,
-                    position:'right'
-                }
+                    scales:{
+                        y:{
+                            beginAtZero: true,
+                            ticks:{
+                                font:{
+                                    size: 16,
+                                }
+                            }
+                            
+                        },
+                        x:{
+                            beginAtZero: true,
+                            ticks:{
+                                font:{
+                                    size: 16,
+                                }
+                            }
+                        }
+                    },
+                    plugins:{
+                        tooltip:{
+                            titleFont:{
+                                size: 20,
+                            },
+                            bodyFont:{
+                                size: 16,
+                            }
+                        },
+                    },
+                    responsive: true,
+                    title:{
+                        display:true,
+                        text:'AQI and HeatWave',
+                        fontSize:20
+                    },
+                    legend:{
+                        display:true,
+                        position:'right'
+                    }
             }}
         />
     </div>

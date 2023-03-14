@@ -7,7 +7,7 @@ import zoomPlugin, { resetZoom } from 'chartjs-plugin-zoom'
 ChartJS.register(zoomPlugin)
 
 
-const ChartOutputYear = (props) => {
+const HeatWavePlot = (props) => {
 
     const chartRef = React.useRef(null)
 
@@ -17,8 +17,8 @@ const ChartOutputYear = (props) => {
         }
     }
 
-    const max = props.city ?.map((item) => item.temp_max)
-    const min = props.city ?.map((item) => item.temp_min)
+    const maxRol = props.city ?.map((item) => item.max_rol)
+    const colorSeq = props.city ?.map((item) => item.color)
 
 
     const state ={
@@ -26,22 +26,31 @@ const ChartOutputYear = (props) => {
         labels: props.data,
         datasets:[
             {
-                label: 'Maximum Predicted Temperature',
+                label: 'Normal',
                 fill: false,
                 lineTension: 0.5,
-                backgroundColor: 'red',
+                backgroundColor: colorSeq,
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 0.5,
-                data: max
+                data: maxRol
             },
             {
-                label: 'Minimum Predicted Temperature',
+                label: 'Heat Wave',
                 fill: false,
                 lineTension: 0.5,
-                backgroundColor: 'rgba(75,192,192,1)',
+                backgroundColor: '#1174ff',
                 borderColor: 'rgba(0,0,0,1)',
                 borderWidth: 0.5,
-                data: min
+                data: []
+            },
+            {
+                label: 'Severe Heatwave',
+                fill: false,
+                lineTension: 0.5,
+                backgroundColor: '#FD1C03',
+                borderColor: 'rgba(0,0,0,1)',
+                borderWidth: 0.5,
+                data: []
             }
         ]
     }
@@ -123,4 +132,4 @@ const ChartOutputYear = (props) => {
   )
 }
 
-export default ChartOutputYear
+export default HeatWavePlot

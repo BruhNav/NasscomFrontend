@@ -1,5 +1,5 @@
 import React from 'react'
-import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
+import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Dialog, DialogActions, DialogContent,  DialogTitle } from '@mui/material'
 import {images} from '../assets'
 
 function createData(CityName, score1, score2, score3, score4) {
@@ -14,16 +14,19 @@ const { arcImg } = images
 
 const HeatWaveModel = () => {
 
+	const [open, setOpen] = React.useState(false)
+
+	const handleClickOpen = () => {
+		setOpen(true)
+	}
+	const handleClose = () => {
+		setOpen(false)
+	}
 
   return (
     <div className='flex flex-col justify-center items-center mt-8'>
-        <div className='flex flex-col justify-center items-center mt-12'>
-            <div className='font-bold text-text text-5xl'>
-                DEPLOYED MODEL: <span className='text-cta mt-2'>Federated Conv-1D</span>
-            </div>
-            <div className='mt-12'>
-                <img width={'600rems'} src={arcImg} />
-            </div>
+        <div className='font-bold text-text text-5xl'>
+            DEPLOYED MODEL: <span className='text-cta mt-2'>Federated Conv-1D</span>
         </div>
         <div className='mt-12 border-2 border-'>
             <TableContainer >
@@ -56,7 +59,25 @@ const HeatWaveModel = () => {
                 </Table>
             </TableContainer>
         </div>
-        <div className='mt-2 mb-12 text-cta'>*The ± symbol signifies the variation of MSE among all the 5 cities</div>
+        <div className='mt-2 text-cta'>*The ± symbol signifies the variation of MSE among all the 5 cities</div>
+        <button onClick={handleClickOpen} className='bg-cta text-white font-semibold w-56 h-12 text-lg rounded mt-8'>Show Architecture</button>
+
+
+
+				<Dialog
+					open={open}
+					onClose={handleClose}
+				>
+					<DialogTitle>
+						<div className='text-cta font-bold text-center text-xl'>Federated Conv-1D Architecture</div> 
+					</DialogTitle>
+					<DialogContent>
+					<img width={'600rems'} src={arcImg} />
+					</DialogContent>
+					<DialogActions>
+						<button className='place-self-center m-2 bg-cta text-white w-14 h-8 rounded' onClick={handleClose}>Close</button>
+					</DialogActions>
+				</Dialog>
     </div>
   )
 }

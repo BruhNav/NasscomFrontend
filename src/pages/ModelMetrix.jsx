@@ -36,15 +36,15 @@ const ModelMetrix = () => {
             exclusive
             onChange={handelChangeOutput}
             aria-label='Output'
-            className='h-12 bg-cta w-max'
+            className='h-16 bg-cta w-max'
             size='large'
             >
-            <ToggleButton value='AQI'>
-                <BsThermometerHalf className='w-20' title='AQI' size={30} color='white'/>
-            </ToggleButton>
-            <ToggleButton value='HeatWave'>
-                <RiWindyLine className='w-20' title='Heat Wave' size={30} color='white'/>
-            </ToggleButton>
+                <ToggleButton sx={{width:'50%'}} value='AQI'>
+                    <div className='text-white font-semibold text-xl'>AQI</div>
+                </ToggleButton>
+                <ToggleButton sx={{width:'50%'}} value='HeatWave'>
+                    <div className='text-white font-semibold text-lg'>Heat Wave</div>
+                </ToggleButton>
             </ToggleButtonGroup>
         </div>
         {output === 'HeatWave' && <HeatWaveModel />}

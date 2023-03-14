@@ -1,16 +1,22 @@
 import { images } from "../assets";
 import {Link} from "react-router-dom";
 
-const { logo } = images;
+const { logo, iiitnr } = images;
 
 function Header(){
   return (
     <header className="flex mt-12 justify-between items-center mx-20">
-        <div className="header__logo">
+        <div>
+            <img
+                src={iiitnr}
+                width={110}
+                alt="image"
+            />
+        </div>
+        <div className="translate-x-32">
             <img
                 src={logo}
                 width={200}
-                height={55}
                 alt="image"
             />
         </div>
