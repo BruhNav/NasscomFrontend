@@ -3,13 +3,11 @@ import { ToggleButton, FormControl, MenuItem, Select, InputLabel} from '@mui/mat
 import { ToggleButtonGroup } from '@mui/material'
 import ChartOutputYear from '../components/ChartOutputYear'
 import AqiOutput from '../components/AqiOutput'
-import HeatWaveImage from '../components/HeatWaveImage'
 import HeatWavePlot from '../components/HeatWavePlot'
 
 //json imports
 
 import City from '../data/json/City.json'
-import HighCity from '../data/json/HighCity.json'
 import AqiCity from '../data/json/AqiCity.json'
 
 

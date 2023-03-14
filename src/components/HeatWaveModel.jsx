@@ -7,7 +7,7 @@ function createData(CityName, score1, score2, score3, score4) {
 }
 
 const rows = [
-    createData('MSE', "1.1 ± 0.05", "1.3 ± 0.07", "0.8 ± 0.06", "1.2±0.07")
+    createData('MSE', "1.1 ± 0.05", "1.2±0.07", "0.8 ± 0.06","1.3 ± 0.07" )
 ]
 
 const { arcImg } = images
@@ -30,14 +30,14 @@ const HeatWaveModel = () => {
         </div>
         <div className='mt-12 border-2 border-'>
             <TableContainer >
-                <Table sx={{minWidth:700}}>
+                <Table sx={{minWidth:1000, height: 125}}>
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='center'>Conv-1D Federated</TableCell>
-                            <TableCell align='center'>Conv-1D Centralized</TableCell>
+                            <TableCell align='center'>Conv-1D Federated (Model 1)</TableCell>
+                            <TableCell align='center'>Conv-2D Centralized (Model 1)</TableCell>
                             <TableCell align='center'>Conv-2D Federated</TableCell>
-                            <TableCell align='center'>Conv-2D Centralized</TableCell>
+                            <TableCell align='center'>Conv-1D Centralized</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>

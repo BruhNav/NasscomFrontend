@@ -32,11 +32,11 @@ const AqiModel = () => {
         </div>
         <div className='mt-8 border-2 border-'>
             <TableContainer >
-                <Table sx={{minWidth:700, maxWidth:800}}>
+                <Table sx={{minWidth:1000}}>
                     <TableHead>
                         <TableRow>
                             <TableCell>Models</TableCell>
-                            <TableCell align='center'>Multiheaded Conv-1D</TableCell>
+                            <TableCell align='center'><span className='text-cta font-semibold'>*Best Model</span><div>Multiheaded Conv-1D</div> </TableCell>
                             <TableCell align='center'>CNN + LSTM</TableCell>
                             <TableCell align='center'>Mullti-variate CNN <div>(with single output)</div></TableCell>
                             <TableCell align='center'>Multi-variate CNN <div>(with multi step output)</div></TableCell>
