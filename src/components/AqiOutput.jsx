@@ -7,7 +7,6 @@ import { Chart } from 'react-chartjs-2'
 const AqiOutput = (props) => {
 
     const max = props.city ?.map((item) => item.temp_max)
-    const min = props.city ?.map((item) => item.temp_min)
 
 
     const state ={
@@ -35,7 +34,6 @@ const AqiOutput = (props) => {
                 {
                     scales:{
                         y:{
-                            beginAtZero: true,
                             ticks:{
                                 font:{
                                     size: 16,
@@ -44,7 +42,7 @@ const AqiOutput = (props) => {
                             
                         },
                         x:{
-                            beginAtZero: true,
+                            beginAtZero: false,
                             ticks:{
                                 font:{
                                     size: 16,
