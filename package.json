@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.11",
+    "@vercel/analytics": "^0.1.11",
     "chart.js": "^4.2.1",
     "chartjs-plugin-zoom": "^2.0.0",
     "hammerjs": "^2.0.8",
