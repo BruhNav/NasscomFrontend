@@ -9,6 +9,9 @@ const {aryaman , harsh, subhanshu, bisal} = images
 const About = () => {
   return (
     <div className='flex flex-col justify-between mt-8 mx-20'>
+      <div className='text-4xl text-cta font-bold items-center justify-center mx-auto'>
+        OUR TEAM
+      </div>
       
       <div className='flex flex-wrap justify-evenly h-150 w-[100%] mt-8'>
 
