@@ -9,9 +9,6 @@ const {aryaman , harsh, subhanshu, bisal} = images
 const About = () => {
   return (
     <div className='flex flex-col justify-between mt-8 mx-20'>
-      <div className='text-xl text-text'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ut deleniti, obcaecati ducimus error minus culpa ipsam, ea nam sunt quasi cumque mollitia distinctio facere reprehenderit. Laborum cumque adipisci vero.
-      </div>
       
       <div className='flex flex-wrap justify-evenly h-150 w-[100%] mt-8'>
 
