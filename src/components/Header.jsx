@@ -16,13 +16,6 @@ function Header(){
             </a>
         </div>
         <div className="translate-x-32">
-            <Link to='/'>
-                <img
-                    src={logo}
-                    width={200}
-                    alt="image"
-                />
-            </Link>
         </div>
         <div className="flex justify-between itmes-center text-xl">
             <div className="mx-4 text-text font-semibold"><button><Link to="/">Home</Link></button></div>
