@@ -14,6 +14,20 @@ const About = () => {
       </div>
       
       <div className='flex flex-wrap justify-evenly h-150 w-[100%] mt-8'>
+        
+        <div className='flex flex-col items-center w-1/5 shadow-lg shadow-black translate-y-0 rounded my-4'>
+          <div className='h-max rounded'>
+            <img src={bisal} alt="" className='rounded-full m-4' width={200}/>
+          </div>
+          <div className='text-text font-bold text-2xl'>Pranv Jaiswal</div>
+          <div className='flex justify-evenly items-center w-[100%] my-6'>
+            <a href="https://github.com/BruhNav" target="_blank"><BsGithub size={30} color="black"/></a>
+            <a href="https://www.linkedin.com/in/pranav-jaiswal-496193202/" target="_blank"><BsLinkedin size={30} color="0A66C2"/></a>
+            <a href="mailto: pranav20100@iiitnr.edu.in"><MdOutlineAlternateEmail size={30} color="EA4335"/></a>
+          </div>
+        </div>
+
+        
 
         <div className='flex flex-col items-center w-1/5 shadow-lg shadow-black translate-y-0 rounded my-4'>
           <div className='h-max rounded'>
@@ -26,7 +40,7 @@ const About = () => {
             <a href="mailto: harsh20101@iiitnr.edu.in"><MdOutlineAlternateEmail size={30} color="EA4335"/></a>
           </div>
         </div>
-        
+
         <div className='flex flex-col items-center w-1/5 shadow-lg shadow-black translate-y-0 rounded my-4'>
           <div className='h-max rounded'>
             <img src={subhanshu} alt="" className='rounded-full m-4' width={200}/>
@@ -40,18 +54,6 @@ const About = () => {
         </div>
 
         
-        <div className='flex flex-col items-center w-1/5 shadow-lg shadow-black translate-y-0 rounded my-4'>
-          <div className='h-max rounded'>
-            <img src={bisal} alt="" className='rounded-full m-4' width={200}/>
-          </div>
-          <div className='text-text font-bold text-2xl'>Vishal Nitnaware</div>
-          <div className='flex justify-evenly items-center w-[100%] my-6'>
-            <a href="https://github.com/vishal7474" target="_blank"><BsGithub size={30} color="black"/></a>
-            <a href="https://www.linkedin.com/in/vishal-nitnaware-71b497225/" target="_blank"><BsLinkedin size={30} color="0A66C2"/></a>
-            <a href="mailto: vishal20102@iiitnr.edu.in"><MdOutlineAlternateEmail size={30} color="EA4335"/></a>
-          </div>
-        </div>
-
         
         <div className='flex flex-col items-center w-1/5 shadow-lg shadow-black translate-y-0 rounded my-4'>
           <div className='h-max rounded'>
