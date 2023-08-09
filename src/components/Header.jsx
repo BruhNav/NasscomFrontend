@@ -21,7 +21,7 @@ function Header(){
             <div className="mx-4 text-text font-semibold"><button><Link to="/">Home</Link></button></div>
             <div className="mx-4 text-text font-semibold"><button><Link to="/about">About Us</Link> </button></div>
             <div className="mx-4 text-text font-semibold"><button><Link to="/model-metrix">Model</Link></button></div>
-            <button className="mx-4 text-white bg-cta font-semibold h-8 w-24 rounded"><a href="mailto: harsh20101@iiitnr.edu.in">Contact</a> </button>
+            <button className="mx-4 text-white bg-cta font-semibold h-8 w-24 rounded"><a href="mailto: pranav20100@iiitnr.edu.in">Contact</a> </button>
         </div>
     </header>
   );
