@@ -2,8 +2,8 @@ import React from 'react'
 import HeatWaveModel from '../components/HeatWaveModel'
 import AqiModel from '../components/AqiModel'
 import { ToggleButton, ToggleButtonGroup, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material'
-import { BsThermometerHalf } from 'react-icons/bs'
-import { RiWindyLine } from 'react-icons/ri'
+// import { BsThermometerHalf } from 'react-icons/bs'
+// import { RiWindyLine } from 'react-icons/ri'
 import {images} from '../assets'
 
 function createData(CityName, score1, score2, score3, score4) {

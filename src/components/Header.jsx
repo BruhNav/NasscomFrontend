@@ -1,7 +1,7 @@
 import { images } from "../assets";
 import {Link} from "react-router-dom";
 
-const { logo, iiitnr } = images;
+const { iiitnr } = images;
 
 function Header(){
   return (

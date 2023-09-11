@@ -1,10 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './components/Header'
 import Home from './pages/Home'
 import ModelMetrix from './pages/ModelMetrix'
-import About from './pages/About'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -14,7 +11,6 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/about' element={<About />} />
 					<Route path='/model-metrix' element={<ModelMetrix />} />
         </Routes>
     </Router>
