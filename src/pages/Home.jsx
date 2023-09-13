@@ -111,7 +111,7 @@ const Home = () => {
         </FormControl>
           {output==='HeatWave'&&
           <div className='flex my-8 items-center w-[100%]'>
-            <input onChange={()=>{setChecked(!checked)}} className='w-6 h-6 mr-2' type="checkbox" />
+            <input checked={checked} onChange={()=>{setChecked(!checked)}} className='w-6 h-6 mr-2' type="checkbox" />
             <div className='text-text font-bold text-lg'>Show Heat Wave Plot</div>
           </div>
           }
