@@ -74,7 +74,19 @@ const Home = () => {
   return (
     <div className='flex mt-8 mx-20'>
       <div className='flex flex-col w-1/5 pr-4'>
-      <div className='justify-start mt-4 text-xl font-bold'>Please select between <span className='text-cta mr-1'> AQI </span> and <span className='text-cta mx-1'> Heat Wave </span>to get started</div>
+        <div className='justify-start mt-4 text-xl font-bold'>
+          Please select between 
+          <span className='text-cta mr-1'>
+            AQI 
+          </span>
+          and 
+          <span className='text-cta mx-1'>
+            Heat Wave 
+          </span>
+          to get started
+        </div>
+
+
         <ToggleButtonGroup
           value={output}
           exclusive
@@ -84,12 +96,20 @@ const Home = () => {
           size='large'
           sx={{ width: '100%' }}
         >
-          <ToggleButton sx={{width:'50%'}} value='AQI'>
+          <ToggleButton 
+            sx={{width:'50%'}} 
+            value='AQI'
+          >
             <div className='text-white font-semibold text-xl'>AQI</div>
           </ToggleButton>
-          <ToggleButton sx={{width:'50%'}} value='HeatWave'>
+
+          <ToggleButton 
+            sx={{width:'50%'}} 
+            value='HeatWave'
+          >
             <div className='text-white font-semibold text-lg'>Heat Wave</div>
           </ToggleButton>
+          
         </ToggleButtonGroup>
 
 

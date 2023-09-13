@@ -1,8 +1,7 @@
 import React from 'react'
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
-import { Chart } from 'react-chartjs-2'
-import zoomPlugin, { resetZoom } from 'chartjs-plugin-zoom'
+import zoomPlugin from 'chartjs-plugin-zoom'
 
 ChartJS.register(zoomPlugin)
 
@@ -12,7 +11,7 @@ const ChartOutputYear = (props) => {
     const chartRef = React.useRef(null)
 
     const resetZoomChart = () => {
-        if (chartRef && chartRef.current) {
+        if (chartRef) {
             chartRef.current.resetZoom();
         }
     }
@@ -21,7 +20,7 @@ const ChartOutputYear = (props) => {
     const min = props.city ?.map((item) => item.temp_min)
 
 
-    const state ={
+    const data ={
 
         labels: props.data,
         datasets:[
@@ -51,7 +50,7 @@ const ChartOutputYear = (props) => {
     <div className='flex flex-col ml-4 w-4/5 items-center'>
         <Line
             ref={chartRef}
-            data={state}
+            data={data}
             options={
                 {
                 scales:{

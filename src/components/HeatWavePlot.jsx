@@ -2,7 +2,7 @@ import React from 'react'
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
-import zoomPlugin, { resetZoom } from 'chartjs-plugin-zoom'
+import zoomPlugin from 'chartjs-plugin-zoom'
 
 ChartJS.register(zoomPlugin)
 
@@ -12,7 +12,7 @@ const HeatWavePlot = (props) => {
     const chartRef = React.useRef(null)
 
     const resetZoomChart = () => {
-        if (chartRef && chartRef.current) {
+        if (chartRef) {
             chartRef.current.resetZoom();
         }
     }
@@ -21,7 +21,7 @@ const HeatWavePlot = (props) => {
     const colorSeq = props.city ?.map((item) => item.color)
 
 
-    const state ={
+    const data ={
 
         labels: props.data,
         datasets:[
@@ -60,7 +60,7 @@ const HeatWavePlot = (props) => {
     <div className='flex flex-col ml-4 w-4/5 items-center'>
         <Line
             ref={chartRef}
-            data={state}
+            data={data}
             options={
                 {
                 scales:{
@@ -127,7 +127,10 @@ const HeatWavePlot = (props) => {
                 }
             }}
         />
-        <button className='bg-cta text-white font-semibold text-xl w-40 rounded h-12 my-4 ' onClick={resetZoomChart}>Reset Zoom</button>
+        <button 
+            className='bg-cta text-white font-semibold text-xl w-40 rounded h-12 my-4 ' 
+            onClick={resetZoomChart}>Reset Zoom
+        </button>
     </div>
   )
 }
