@@ -36,21 +36,11 @@ const HeatWavePlot = (props) => {
             },
             {
                 label: 'Heat Wave',
-                fill: false,
-                lineTension: 0.5,
                 backgroundColor: '#1174ff',
-                borderColor: 'rgba(0,0,0,1)',
-                borderWidth: 0.5,
-                data: []
             },
             {
                 label: 'Severe Heatwave',
-                fill: false,
-                lineTension: 0.5,
                 backgroundColor: '#FD1C03',
-                borderColor: 'rgba(0,0,0,1)',
-                borderWidth: 0.5,
-                data: []
             }
         ]
     }
