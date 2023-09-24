@@ -5,6 +5,9 @@
 ### Install Node JS
 Refer to https://nodejs.org/en/ to install nodejs
 
+## Screenshots
+<img width="947" alt="image" src="https://github.com/BruhNav/NasscomFrontend/assets/75622946/ec62602a-08bc-4f4b-8e68-250bba1eb54a">
+
 
 ## Live Application URL
 
