@@ -6,10 +6,12 @@
 Refer to https://nodejs.org/en/ to install nodejs
 
 ## Screenshots
+
 Heatwave Plot
+
 <img width="947" alt="image" src="https://github.com/BruhNav/NasscomFrontend/assets/75622946/ec62602a-08bc-4f4b-8e68-250bba1eb54a">
 
-AQI plots
+AQI plot
 
 <img width="960" alt="image" src="https://github.com/BruhNav/NasscomFrontend/assets/75622946/4e8b9a52-de1a-4c31-bfde-4d595d492c22">
 
