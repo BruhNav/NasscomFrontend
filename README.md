@@ -11,7 +11,8 @@ Heatwave Plot
 
 AQI plots
 
-<img width="682" alt="image" src="https://github.com/BruhNav/NasscomFrontend/assets/75622946/8e44728b-1893-4f0c-9b43-572909a64a58">
+<img width="960" alt="image" src="https://github.com/BruhNav/NasscomFrontend/assets/75622946/4e8b9a52-de1a-4c31-bfde-4d595d492c22">
+
 
 ## Live Application URL
 
